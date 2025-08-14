@@ -50,3 +50,13 @@ def hello_world():
 
 if __name__ == "__main__":
     app.run()
+	import os
+
+def appx_to_video(appx_path: str) -> str:
+    # Your conversion logic here
+    # Example: Use ffmpeg or a custom script to convert .appx to video
+    output_path = appx_path.replace('.appx', '.mp4')
+    # Placeholder: Replace with actual conversion code
+    os.system(f'ffmpeg -i {appx_path} {output_path}')
+    return output_path
+	
